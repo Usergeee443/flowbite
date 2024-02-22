@@ -5,10 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.css">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="./products.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -62,6 +62,7 @@
               </svg>
               <span class="sr-only">Toggle sidebar</span>
             </button>
+            
             <form action="#" method="GET" class="hidden md:block md:pl-2">
               <label for="topbar-search" class="sr-only">Search</label>
               <div class="relative md:w-64 md:w-96">
@@ -791,7 +792,7 @@
  
             <li>
               <a
-                href="#"
+                href="./index.html"
                 class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-white-700 group"
               >
                 <lord-icon
@@ -1171,365 +1172,49 @@
       </aside>
   
       <main class="p-9 md:ml-64 h-auto pt-20">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9 mb-4">
-          <div
-            class="border-2 border-solid border-gray-300 rounded-xl dark:border-gray-600 h-32 md:h-38"
-          >
-          <div class="card-icon-text">
-            <h1>714K</h1>
-            <div class="flex-icon">
-            <lord-icon
-            src="https://cdn.lordicon.com/taymdfsf.json"
-            trigger="hover"
-            stroke="bold"
-            colors="primary:#000000,secondary:#08a88a"
-            style="width:50px;height:50px">
-            </lord-icon>
-            <p>Weekly Sales</p>
-            </div>
+        
+    
+            <div
+            class=" rounded-xl border-gray-300 dark:border-gray-600 h-96 mb-4"
+            >
+            <div class="head-cards">
+              <div class="card">
+                  <img src="https://minimal-kit-react.vercel.app/assets/images/products/product_5.jpg" alt="">
+                  <div class="card-text">
+                      <h1>3D Soft Curves</h1>
+                      <p>33$</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://minimal-kit-react.vercel.app/assets/images/products/product_6.jpg" alt="">
+                  <div class="card-text">
+                      <h1>3D Soft Curves</h1>
+                      <p>33$</p>
+                  </div>
+                 
+              </div>
+              <div class="card">
+                  <img src="https://minimal-kit-react.vercel.app/assets/images/products/product_7.jpg" alt="">
+                  <div class="card-text">
+                      <h1>3D Soft Curves</h1>
+                      <p>33$</p>
+                  </div>
+               
+              </div>
+              <div class="card">
+                  <img src="https://minimal-kit-react.vercel.app/assets/images/products/product_8.jpg" alt="">
+                  <div class="card-text">
+                      <h1>3D Soft Curves</h1>
+                      <p>33$</p>
+                  </div>
+                 
+              </div>
           </div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-32 md:h-38"
-          >
-          <div class="card-icon-text">
-            <h1>1.35m</h1>
-            <div class="flex-icon">
-              <lord-icon
-              src="https://cdn.lordicon.com/mebvgwrs.json"
-              trigger="hover"
-              style="width:50px;height:50px">
-              </lord-icon>
-            <p>New Users</p>
+
             </div>
-          </div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-32 md:h-38"
-          >
-          <div class="card-icon-text">
-            <h1>1.72m</h1>
-            <div class="flex-icon">
-              <lord-icon
-              src="https://cdn.lordicon.com/eiekfffz.json"
-              trigger="hover"
-              colors="primary:#e8b730,secondary:#eee966,tertiary:#f4f19c"
-              style="width:50px;height:50px">
-              </lord-icon>
-            <p>Item Orders</p>
-            </div>
-          </div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-32 md:h-38"
-          >
-          <div class="card-icon-text">
-            <h1>234</h1>
-            <div class="flex-icon">
-              <lord-icon
-              src="https://cdn.lordicon.com/wsdieofl.json"
-              trigger="hover"
-              colors="primary:#e83a30,secondary:#ee8f66,tertiary:#c71f16,quaternary:#ffffff"
-              style="width:50px;height:50px">
-              </lord-icon>
-            <p>Bug Reports</p>
-            </div>
-          </div>
-        </div>
-        </div>
-        <!-- <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-        ></div> -->
-        <div class="grid grid-cols-2 gap-9 mb-9">
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-58 md:h-82"
-          >
-          <div id="chart"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 w-90 h-58 md:h-82 ml-12"
-          >
-          <div id="chart-mixed"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-58 md:h-82"
-          >
-          <div id="bar"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 w-90 h-58 md:h-82 ml-12"
-          >
-          <div id="mixed"></div>
-        </div>
-        </div>
-        <!-- <div
-          class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-        ></div> -->
-        <div class="grid grid-cols-2 gap-4">
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-58 md:h-82"
-          >
-          <div id="mixed-bottom"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 w-90 h-58 md:h-82 ml-12"
-          >
-          <div id="bar-bottom"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 w-90 h-58 md:h-82 mr-12"
-          >
-          <div id="chart-bottom"></div>
-        </div>
-          <div
-            class="border-2 border-solid rounded-xl border-gray-300 dark:border-gray-600 h-58 md:h-82"
-          >
-          <div id="chart-bottom2"></div>
-        </div>
-        </div>
       </main>
     </div>
-    <script>
-
-    const pieChartData = {
-    labels: ['A', 'B', 'C', 'D'],
-    series: [2323, 3232, 3232, 90990]
-    }
-
-    const pieChartOptions = {
-    chart: {
-    type: 'pie',
-    height: 350
-    },
-    labels: pieChartData.labels,
-    series: pieChartData.series
-    }
-
-    // Sample data for the candlestick chart
-    var series = [{
-    data: [{
-    x: new Date(2021, 0, 1),
-    y: [6593.34, 6600, 6590, 6591.02]
-    }, {
-    x: new Date(2021, 0, 2),
-    y: [6591, 6603.02, 6591, 6591]
-    }, {
-    x: new Date(2021, 0, 3),
-    y: [6600, 6600, 6590.01, 6593.01]
-    }, {
-    x: new Date(2021, 0, 4),
-    y: [6593, 6600, 6593, 6600]
-    }]
-    }];
-
-    var dates = [
-      [ new Date(2021, 0, 1), 100],
-      [ new Date(2021, 0, 2), 150],
-      [ new Date(2021, 0, 3), 200],
-      [ new Date(2021, 0, 4), 250],
-    ];
-
-    // Chart options
-    var options = {
-    chart: {
-    type: 'candlestick',
-    height: 350
-    },
-    series: series,
-    xaxis: {
-    type: 'datetime'
-    }
-    };
-
-
-
-    var chart = {
-          series: [{
-          name: 'XYZ MOTORS',
-          data: dates
-        }],
-          chart: {
-          type: 'area',
-          stacked: false,
-          height: 350,
-          zoom: {
-            type: 'x',
-            enabled: true,
-            autoScaleYaxis: true
-          },
-          toolbar: {
-            autoSelected: 'zoom'
-          }
-        },
-        dataLabels: {
-          enabled: false
-        },
-        markers: {
-          size: 0,
-        },
-        title: {
-          text: 'Stock Price Movement',
-          align: 'left'
-        },
-        fill: {
-          type: 'gradient',
-          gradient: {
-            shadeIntensity: 1,
-            inverseColors: false,
-            opacityFrom: 0.5,
-            opacityTo: 0,
-            stops: [0, 90, 100]
-          },
-        },
-        yaxis: {
-          labels: {
-            formatter: function (val) {
-              return (val / 1000000).toFixed(0);
-            },
-          },
-          title: {
-            text: 'Price'
-          },
-        },
-        xaxis: {
-          type: 'datetime',
-        },
-        tooltip: {
-          shared: false,
-          y: {
-            formatter: function (val) {
-              return (val / 1000000).toFixed(0)
-            }
-          }
-        }
-        };
-
-        var mixed = {
-          series: [{
-          name: 'Website Blog',
-          type: 'column',
-          data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
-        }, {
-          name: 'Social Media',
-          type: 'line',
-          data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
-        }],
-          chart: {
-          height: 350,
-          type: 'line',
-        },
-        stroke: {
-          width: [0, 4]
-        },
-        title: {
-          text: 'Traffic Sources'
-        },
-        dataLabels: {
-          enabled: true,
-          enabledOnSeries: [1]
-        },
-        labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
-        xaxis: {
-          type: 'datetime'
-        },
-        yaxis: [{
-          title: {
-            text: 'Website Blog',
-          },
-        
-        }, {
-          opposite: true,
-          title: {
-            text: 'Social Media'
-          }
-        }]
-        };
-
-        var bar = {
-          series: [{
-          data: [400, 430, 448, 470, 540, 580, 690]
-        }],
-          chart: {
-          type: 'bar',
-          height: 350
-        },
-        annotations: {
-          xaxis: [{
-            x: 500,
-            borderColor: '#00E396',
-            label: {
-              borderColor: '#00E396',
-              style: {
-                color: '#fff',
-                background: '#00E396',
-              },
-              text: 'X annotation',
-            }
-          }],
-          yaxis: [{
-            y: 'July',
-            y2: 'September',
-            label: {
-              text: 'Y annotation'
-            }
-          }]
-        },
-        plotOptions: {
-          bar: {
-            horizontal: true,
-          }
-        },
-        dataLabels: {
-          enabled: true
-        },
-        xaxis: {
-          categories: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        },
-        grid: {
-          xaxis: {
-            lines: {
-              show: true
-            }
-          }
-        },
-        yaxis: {
-          reversed: true,
-          axisTicks: {
-            show: true
-          }
-        }
-        };
-
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#chart-mixed"), mixed);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#bar"), bar);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#mixed"), mixed);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#mixed-bottom"), mixed);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#bar-bottom"), bar);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#chart-bottom"), options);
-        chart.render();
-
-        var chart = new ApexCharts(document.querySelector("#chart-bottom2"), options);
-        chart.render();
-
-       
-
-
-        
-    </script>
+    
     
 
     <div id="app"></div>

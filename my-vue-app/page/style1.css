@@ -1,0 +1,22 @@
+.card-icon-text {
+    margin-left: 50px;
+}
+
+.card-icon-text h1 {
+    color: black;
+    font-size: 30px;    
+    padding-left: 60px;
+    padding-top: 25px;
+}
+
+.flex-icon {
+    display: flex;
+    margin-top: -40px;
+}
+
+.flex-icon p {
+    color: gray;
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
